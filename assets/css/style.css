@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+
+/* Basic styling */
+
+body {
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "Lora", sans-serif;
+  background-image:url('../images/showcase.png');
+  color: #ccc;
+}
+#wrapper{
+  padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+    }
+
+/* Headings */
+h1, h2 {
+    font-weight: 200;
+    margin: 0.4rem;
+}
+
+h1 {
+    margin-top: 150px;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #aaa;
+}
+
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.4rem solid #777;
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 0.4rem;
+}
+
+/* Responsive cursor */
+@media(min-width: 1200px) {
+    h1 {
+    font-size: 5rem;
+    }
+    
+}
+@media(max-width: 1200px) {
+  h1 {
+  font-size: 4.5rem;
+  }
+  .img {
+    width: 275px;
+    height: 250px;
+    bottom: -65px;
+    margin-left: -20px;
+  }
+}
+
+
+@media(max-width: 800px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+    font-size: 2.5rem;
+     }
+     .txt-type > .txt {
+     
+      font-size: 2rem;
+      font-weight: 200;
+      margin: 0.5rem;
+  }
+     .img {
+      width: 225px;
+      height: 205px;
+      bottom: -70px;
+      margin-left: -35px;
+    }
+}
+
+/* Responsive headings */
+@media(max-width: 500px) {
+h1 {
+    font-size: 2rem;
+    }
+.txt-type > .txt {
+     
+      font-size: 1.5rem;
+      font-weight: 200;
+      margin: 0.6rem;
+  }
+.container {
+      padding: 0 2rem;
+  }
+  .img {
+    width: 110x;
+    height: 90px;
+    bottom: -20px;
+    margin-left: -20px;
+  }
+}
+
+/* NavBar */
+
+  /* ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+    font-size: 1.3rem;
+    margin: auto;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 32px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: hsl(0, 5%, 63%);
+  }
+
+  nav{
+    text-align: center;
+  }
+  nav ul{
+    display: inline-block;
+  } */
+
+  #myNavbar{
+    display: block;
+  }
+  .navbar {
+    overflow: hidden;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: auto;
+    text-align:center;
+
+    /* background-color: #333; */
+    /* position: relative;
+     width: 100%;  */
+    margin-top: 40px;
+    
+    
+  }
+  
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+
+  
+  .navbar a {
+    
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display:inline-block;
+  }
+  
+  /* hovering over navbar */
+  .navbar a:hover {
+    background-color: #a39898;
+    color: black;
+  }
+  
+  .navbar a.active {
+    /* background-color: #b30000; #4CAF50; */
+    color: white;
+  }
+  .navbar a.active:hover {
+    background-color: #4e4e4e; /* #4CAF50; */
+    color: white;
+  }
+  
+  .navbar .icon {
+    display: none;
+  }
+
+/* to make navbar responsive */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+    margin-right: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive .icon {
+    position: relative; /* changed from absolute to relative */
+    margin-right: 20px;
+  }
+}
+.navbar.responsive a {
+  float: none;   /*float:none is added which makes the element stay in it's fixed position*/
+  display: block;            
+  text-align: left;
+}
+
+.sample {
+  height: auto;
+  width: 100%;
+  margin-right: 0;
+  
+  bottom: 8px;
+  right: 16px;
+}

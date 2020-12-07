@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "Lora", sans-serif;
+
+    /* background-size: cover; */
+    background-image:url('showcase.png');
+    color: #ccc;
+    overflow: hidden;
+  }
+  #wrapper{
+    padding: 10px;
+  }
+  
+  .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 0 3rem;
+      }
+  
+  /* Headings */
+  h1{
+      font-weight: 200;
+      /* margin: 0.4rem; (Margins had to be removed)*/
+      font-display: center; 
+  }
+  
+  h1 {
+    /* margin-top:auto; (This had to be removed bcz we inserted display:inline;)*/ 
+      font-size: 2rem;
+      display: inline;
+  }
+  
+  @media(max-width: 800px) {
+      .container {
+          padding: 0 1rem;
+      }
+  
+      h1 {
+      font-size: 2rem;
+       }
+       .txt-type > .txt {
+       
+        font-size: 2rem;
+        font-weight: 200;
+        margin: 0.5rem;
+    }
+  }
+
+  @media(max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+        }
+    .txt-type > .txt {
+         
+          font-size: 1.5rem;
+          font-weight: 200;
+          margin: 0.6rem;
+      }
+    .container {
+          padding: 0 2rem;
+      }
+    }
+
+    #myNavbar{
+        display: block;
+      }
+      .navbar {
+        overflow: hidden;
+        display: inline;
+        font-size: 1.3rem;
+        margin: auto;
+        text-align:center;
+    
+        /* background-color: #333; */
+        /* position: relative;
+         width: 100%;  */
+        /* margin-top: 40px; */
+        
+        
+      }
+      
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+    
+      
+      .navbar a {
+        
+        display: block;
+        color: #f2f2f2;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        display:inline-block;
+      }
+      
+      /* hovering over navbar */
+      .navbar a:hover {
+        background-color: #4e4e4e;
+        color: black;
+      }
+      
+      .navbar a.active {
+        /* background-color: #b30000; #4CAF50; */
+        color: white;
+      }
+      .navbar a.active:hover {
+        background-color: #4e4e4e; /* #4CAF50; */
+        color: white;
+      }
+      
+      .navbar .icon {
+        display: none;
+      }
+    
+    /* to make navbar responsive */
+    @media screen and (max-width: 600px) {
+      .navbar a:not(:first-child) {
+        display: none;
+      }
+      .navbar a.icon {
+        float: right;
+        display: block;
+        margin-right: 20px;
+      }
+      
+    }
+    
+    @media screen and (max-width: 600px) {
+      .navbar.responsive .icon {
+        position: relative; /* changed from relative to absolute */
+        margin-right: 20px;
+      }
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 7px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+

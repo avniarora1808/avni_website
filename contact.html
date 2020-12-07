@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Contact us</title>
+    <link rel="stylesheet" href= "assets/css/style.css">
+    <link rel="stylesheet" href= "assets/css/contact.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+    
+
+    <div class="navbar" id="myNavbar">
+            <a href="index.html" class="fa fa-home" style="font-size:24px"
+              >&nbsp;&nbsp;Home</a>
+            <a href="about.html">&nbsp;&nbsp;<i class="fa fa-user"></i>&nbsp;&nbsp;About</a>
+            <a href="photography.html">&nbsp;&nbsp;<i class="fa fa-image"></i></i>&nbsp;&nbsp;Photography</a>
+
+            <a href="contact.html">&nbsp;&nbsp;<i class="fa fa-map-marker"></i></i></i>&nbsp;&nbsp;Contact Me</a>
+            
+            <a
+              href="javascript:void(0);"
+              style="font-size:15px;"
+              class="icon"
+              onclick="myFunction()"
+              >&#9776;</a
+            >
+          </div>
+          <!-- <h1>Contact Page</h1> -->
+    
+        <script src="assets/js/main.js"></script>
+
+        <div class="contact_container">
+          
+          <div class="contact_row">
+            <div  class="contact_column">
+              <img src="assets/images/sample.jpg" style="width:70%">
+            </div>
+            <div class="contact_column">
+              <div style="text-align:center">
+                <h2>Contact Us</h2>
+                <p >Feel free to contact me anytime, or leave me a message:</p>
+              </div>
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
