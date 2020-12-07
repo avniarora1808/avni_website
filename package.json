@@ -1,0 +1,16 @@
+{
+  "name": "Avni_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://avniarora1808.github.io/avni_website",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}

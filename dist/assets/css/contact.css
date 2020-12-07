@@ -1,0 +1,61 @@
+/* contact page styling */
+
+* {
+    box-sizing: border-box;
+    }
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* submit button styling */
+input[type=submit] {
+  background-color: #724b4b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* when the user hovers over the submit button */
+input[type=submit]:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Style the container/contact section */
+.contact_container {
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+ 
+}
+
+/* Create two columns that float next to eachother */
+.contact_column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+ 
+}
+
+/* Clear floats after the columns */
+.contact_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .contact_column, input[type=submit] {
+    width: 100%;
+    
+  }
+}
